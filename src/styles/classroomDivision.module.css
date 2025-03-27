@@ -1,0 +1,59 @@
+.classroomContainer {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    padding-top: 90px;
+  }
+  
+  .pageTitle {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .sectionTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    background: #cfe2ff;
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+    padding-top: 10px;
+  }
+  
+  .standardLabel {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .divisionBox {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border: 2px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .divisionBox:hover {
+    background: #007bff;
+    color: white;
+  }
+  

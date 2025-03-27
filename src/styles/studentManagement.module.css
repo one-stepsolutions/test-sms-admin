@@ -1,0 +1,159 @@
+/* ======= FULL LAYOUT ======= */
+.studentManagementContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+/* ======= MAIN CONTENT ======= */
+.mainContent {
+    flex: 1;
+    padding: 20px;
+    margin-left: 320px; /* Adjusted for sidebar */
+    margin-top: 80px; /* Adjusted for topbar */
+}
+
+/* ======= HEADER ROW (Title + Add Button) ======= */
+.headerRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* Page Title */
+.pageTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* ======= ADD BUTTON ======= */
+.addButton {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.addButton:hover {
+    background: #0056b3;
+}
+
+/* ======= SEARCH BAR ======= */
+.searchContainer {
+    position: relative;
+    width: 250px;
+}
+
+.searchInput {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.searchIcon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    cursor: pointer;
+    color: #007bff;
+}
+/* ======= TABLE STYLING ======= */
+.tableContainer {
+    width: 100%;
+    overflow-x: auto;
+    padding: 15px;
+}
+
+.studentListTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+}
+
+/* Table */
+.studentTable {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.studentTable th,
+.studentTable td {
+    border: 1px solid #007bff;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.studentTable th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+/* Adjust Alternate Row Colors */
+.studentTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* ======= RESPONSIVENESS ======= */
+@media (max-width: 1024px) {
+    .mainContent {
+        margin-left: 280px;
+    }
+
+    .headerRow {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .addButton {
+        margin-top: 10px;
+    }
+
+    .searchContainer {
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainContent {
+        margin-left: 250px;
+    }
+
+    .searchContainer {
+        width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainContent {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .searchContainer {
+        width: 100%;
+    }
+
+    .studentTable th,
+    .studentTable td {
+        font-size: 12px;
+        padding: 5px;
+    }
+}

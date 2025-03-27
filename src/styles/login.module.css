@@ -1,0 +1,135 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; /* Ensuring exact design font */
+}
+
+/* Full-screen background */
+.container {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end; /* Keep form aligned towards right */
+  align-items: center;
+  padding-right: 15%; /* Move slightly to the left by reducing right padding */
+  position: relative;
+}
+
+/* Overlay effect for better readability */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1); /* Light overlay */
+  z-index: 1;
+}
+
+/* Login Box (Now Without Borders) */
+.loginBox {
+  width: 380px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.3); /* More transparent */
+  backdrop-filter: blur(20px); /* Blurred background effect */
+  border-radius: 12px;
+  box-shadow: none; /* Remove shadow to remove outer border */
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* Title */
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+/* Input Group */
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.inputGroup label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #222; /* Darker text */
+  font-size: 18px; /* Bigger font */
+}
+
+/* Textbox Styling (Now With Borders) */
+.inputGroup input {
+  padding: 14px;
+  font-size: 18px; /* Bigger text */
+  border: 2px solid rgba(0, 0, 0, 0.5); /* Darker border for better visibility */
+  background: rgba(255, 255, 255, 0.8); /* Light background */
+  color: #222;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.inputGroup input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+}
+
+/* Focus Effect */
+.inputGroup input:focus {
+  border-color: #007bff;
+  background: rgba(255, 255, 255, 1);
+}
+
+/* Login Button (Same Size, Aligned Better) */
+.loginButton {
+  width: 80%;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px; /* Smaller size */
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 15px;
+}
+
+.loginButton:hover {
+  background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    justify-content: center; /* Center the form for tablets */
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .loginBox {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .loginButton {
+    padding: 8px; /* Smaller for mobile */
+  }
+}

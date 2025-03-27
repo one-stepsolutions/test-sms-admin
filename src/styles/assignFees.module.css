@@ -1,0 +1,103 @@
+.container {
+    padding: 60px;
+    width: 80%;
+    margin: auto;
+  }
+  
+  /* Page Title */
+  .pageTitle {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left;
+    padding-left: 120px;
+    padding-top: 20px;
+  }
+  
+  /* Tabs */
+  .tabsContainer {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    /* border-bottom: 2px solid #ccc; */
+    padding-bottom: 10px;
+    align-items: center;
+    padding-left: 380px;
+  }
+  
+  .clickableTab {
+    color: blue;
+    cursor: pointer;
+  }
+  
+  .activeTab {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  /* Standard Selection */
+  .standardContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-left: 540px;
+  }
+  
+  .standardLabel {
+    font-size: 16px;
+  }
+  
+  .dropdown {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Table */
+  .tableContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .feeTable {
+    width: 60%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  .feeTable th {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: 1px solid black;
+  }
+  
+  .feeTable td {
+    padding: 10px;
+    border: 1px solid black;
+  }
+  
+  /* Total Row */
+  .totalRow {
+    font-weight: bold;
+  }
+  
+  /* Save Button */
+  .buttonContainer {
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  .saveButton {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  

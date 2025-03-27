@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+  }
+  
+  .mainContent {
+    flex-grow: 1;
+    padding: 80px;
+    padding-left: 25%;
+  }
+  
+  .selectionRow {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+    align-items: center;
+  }
+  
+  select, input {
+    padding: 8px;
+    width: 120px;
+  }
+  
+  .timetable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  .timetable th, .timetable td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .timetable th {
+    background-color: #007bff;
+    color: white;
+  }
+  

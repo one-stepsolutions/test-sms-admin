@@ -1,0 +1,115 @@
+/* Main Layout */
+.dashboardContainer {
+    display: flex;
+  }
+  
+  /* Main Content */
+.mainContent {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 250px;
+}
+
+/* Page Title */
+.pageTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 50px;
+}
+
+/* Centering the Create Timetable heading */
+.headerContainer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sectionTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Form Container */
+.formContainer {
+    width: 70%;
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    /* border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); */
+}
+
+/* Form Rows */
+.formRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Labels */
+.label {
+    font-size: 16px;
+    font-weight: bold;
+    width: 120px;
+    text-align: right;
+}
+
+/* Input Fields */
+.inputField {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+}
+
+/* Button Container */
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Confirm Button */
+.confirmButton {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.confirmButton:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .formContainer {
+        width: 90%;
+    }
+
+    .formRow {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .label {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    .inputField {
+        width: 100%;
+        margin-left: 0;
+    }
+}

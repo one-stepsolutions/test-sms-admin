@@ -1,0 +1,90 @@
+/* Layout */
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.mainContent {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 250px;
+}
+
+/* Page Title */
+.pageTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 60px;
+}
+
+/* Section Title */
+.sectionTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Table Styling */
+.tableContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.installmentsTable {
+    width: 90%;
+    max-width: 1100px;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: white;
+}
+
+/* Table Headers */
+.installmentsTable th {
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border: 1px solid black;
+}
+
+/* Table Cells */
+.installmentsTable td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* No Data */
+.noData {
+    text-align: center;
+    font-style: italic;
+    color: red;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .installmentsTable {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainContent {
+        margin-left: 0;
+    }
+
+    .tableContainer {
+        overflow-x: auto;
+    }
+
+    .installmentsTable {
+        width: 100%;
+    }
+}

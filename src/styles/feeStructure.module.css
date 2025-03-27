@@ -1,0 +1,144 @@
+.dashboardContainer {
+    display: flex;
+  }
+  
+  /* Main Content Layout */
+  .mainContent {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 250px;
+  }
+  
+  /* Page Title */
+  .pageTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 40px;
+  }
+  
+  /* Section Title */
+  .sectionTitle {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form Container */
+  .formContainer {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    /* border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+  }
+  
+  /* Tabs */
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: 2px solid #ddd; */
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+  }
+  
+  .tab {
+    font-size: 18px;
+    cursor: pointer;
+    padding: 8px 15px;
+    color: gray;
+  }
+  
+  .activeTab {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-bottom: 3px solid #007bff;
+    color: #007bff;
+  }
+  
+  /* Input Group */
+  .inputGroup {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* Input Field */
+  .inputField {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Add and Remove Buttons */
+  .addButton,
+  .removeButton {
+    font-size: 20px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .addButton {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .removeButton {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  /* Save Button */
+  .saveButton {
+    display: block;
+    margin: auto;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .formContainer {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .mainContent {
+      margin-left: 0;
+    }
+  
+    .formContainer {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .tabs {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .inputGroup {
+      flex-direction: column;
+    }
+  
+    .saveButton {
+      width: 100%;
+    }
+  }
+  

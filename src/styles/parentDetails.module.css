@@ -1,0 +1,73 @@
+/* Parent Container */
+.parentGuardianContainer {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; */
+}
+
+/* Section Title (Button) */
+.sectionTitle {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    background: #cfe2ff;
+    border-radius: 20px;
+    padding: 10px 25px;
+    display: block; /* Change from inline-block to block */
+    margin: 0 auto 15px auto; /* Center horizontally */
+    width: fit-content; /* Ensures it takes only necessary width */
+}
+
+
+/* Form Layout */
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input Row */
+.inputRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Labels */
+.inputLabel {
+    font-size: 16px;
+    font-weight: bold;
+    width: 250px;
+    text-align: right;
+}
+
+/* Input Fields */
+.inputField {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .inputRow {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .inputLabel {
+        text-align: left;
+        width: 100%;
+    }
+
+    .inputField {
+        width: 100%;
+    }
+}

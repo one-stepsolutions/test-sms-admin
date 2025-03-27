@@ -1,0 +1,44 @@
+.declarationContainer {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+   /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;*/
+}
+
+/* Section Title */
+.sectionTitle {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    background: #cfe2ff;
+    border-radius: 20px;
+    padding: 10px 25px;
+    width: fit-content;
+    margin: 0 auto 15px auto;
+}
+
+/* Declaration Content */
+.declarationContent {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Checkbox */
+.declarationCheckbox {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+/* Declaration Text */
+.declarationText {
+    font-size: 16px;
+    line-height: 1.5;
+}

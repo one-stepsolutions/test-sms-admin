@@ -1,0 +1,189 @@
+.container {
+    display: flex;
+}
+
+.mainContent {
+    flex-grow: 1;
+    padding: 60px;
+    margin-left: 250px;
+    align-items: center;
+}
+
+/* Title Styling */
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Form Section */
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 700px;
+    margin-top: 20px;
+}
+
+.nameInputs {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Submit Button - Align Right */
+.submitButton {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    align-self: flex-end;  /* Move to the right */
+}
+
+.submitButton:hover {
+    background: #0056b3;
+}
+
+/* Table Section */
+.tableHeading {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Centering Table */
+.timetableTable {
+    width: 80%;
+    margin: 0 auto;  /* Centers the table */
+    border-collapse: collapse;
+    text-align: center;
+    .container {
+    display: flex;
+}
+
+.mainContent {
+    flex-grow: 1;
+    padding: 60px;
+    margin-left: 250px;
+}
+
+/* Title Styling */
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Form Section */
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 700px;
+    margin-top: 20px;
+}
+
+.nameInputs {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Submit Button - Align Right */
+.submitButton {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    align-self: flex-end;  /* Move to the right */
+}
+
+.submitButton:hover {
+    background: #0056b3;
+}
+
+/* Table Section */
+.tableHeading {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Centering Table */
+.timetableTable {
+    width: 80%;
+    margin: 0 auto;  /* Centers the table */
+    border-collapse: collapse;
+    text-align: center;
+    padding-left: 450px;
+}
+
+.timetableTable th,
+.timetableTable td {
+    border: 2px solid #007bff;
+    padding: 10px;
+    text-align: center;
+}
+
+.timetableTable th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.timetableTable input {
+    width: 90%;
+    padding: 5px;
+    text-align: center;
+}
+
+}
+
+.timetableTable th,
+.timetableTable td {
+    border: 2px solid #007bff;
+    padding: 10px;
+    text-align: center;
+}
+
+.timetableTable th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.timetableTable input {
+    width: 90%;
+    padding: 5px;
+    text-align: center;
+}

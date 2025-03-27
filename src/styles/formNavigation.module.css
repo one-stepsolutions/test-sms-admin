@@ -1,0 +1,48 @@
+/* Navigation Buttons Container */
+.formNavigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Button Styling */
+.backButton, .nextButton {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: #0d78bc;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.backButton:hover, .nextButton:hover {
+    opacity: 0.8;
+}
+
+/* Ensure Equal Button Sizes */
+.backButton {
+    margin-left: 400px;
+}
+
+.nextButton {
+    margin-right: 400px;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .formNavigation {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .backButton, .nextButton {
+        padding: 10px 25px;
+    }
+}

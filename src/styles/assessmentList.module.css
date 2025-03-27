@@ -1,0 +1,73 @@
+.container {
+    display: flex;
+  }
+  
+  .mainContent {
+    flex-grow: 1;
+    padding: 80px;
+    padding-left:25%;
+  }
+  
+  .headerSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .addButton {
+    padding: 8px 16px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .filters button {
+    padding: 5px 10px;
+    border: 1px solid blue;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .filters button.active {
+    background-color: blue;
+    color: white;
+  }
+  
+  .assessmentList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .assessmentItem {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .assessmentItem:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .viewButton {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

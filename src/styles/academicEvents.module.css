@@ -1,0 +1,104 @@
+/* Container Styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  padding-left: 320px; /* Align content properly with sidebar */
+  background-color: #ffffff;
+}
+
+/* Title Styling */
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form Group for Standard Selection */
+.formGroup {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-left: 900px;
+}
+.formTitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-left: 600px;
+}
+.formGroup label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.formGroup select {
+  width: 150px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Table Styling */
+.eventsTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+
+.eventsTable th {
+  background-color: #007bff;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px;
+  text-align: center;
+  border: 2px solid #007bff;
+}
+
+.eventsTable td {
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #007bff;
+  color: #333;
+}
+
+/* Placeholder for Empty State */
+.eventsTable tbody tr td {
+  color: #888;
+  font-size: 16px;
+}
+
+/* Adjustments for Smaller Screens */
+@media (max-width: 1024px) {
+  .container {
+      padding-left: 200px;
+  }
+
+  .formGroup select {
+      width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+      padding-left: 20px;
+  }
+
+  .eventsTable th, .eventsTable td {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  .formGroup select {
+      width: 100px;
+  }
+}

@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+  }
+  
+  .mainContent {
+    flex-grow: 1;
+    padding: 80px;
+    padding-left: 25%;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .table th {
+    background-color: #007bff;
+    color: white;
+  }
+  .resultsTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .resultsTable th, .resultsTable td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .resultsTable th {
+    background-color: #007bff;
+    color: white;
+  }
+  

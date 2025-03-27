@@ -1,0 +1,83 @@
+.sectionContainer {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+   /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;*/
+  }
+  
+/* Section Title */
+.sectionTitle {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    background: #cfe2ff;
+    border-radius: 20px;
+    padding: 10px 25px;
+    width: fit-content;
+    margin: 0 auto 15px auto;
+}
+  
+  .profileContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 50px;
+  }
+  
+  .profileImage {
+    width: 80px;
+    height: 60px;
+    border: 3px solid #007bff;
+    border-radius: 10px;
+   
+  }
+  
+  .inputRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 20px;
+  }
+  
+  .inputLabel {
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 180px;
+    color: #333;
+  }
+  
+  .inputGroup {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .inputField, .selectField {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .inputRow {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+  
+    .inputGroup {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .profileContainer {
+      justify-content: center;
+    }
+  }
+  

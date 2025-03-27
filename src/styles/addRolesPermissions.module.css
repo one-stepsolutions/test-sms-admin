@@ -1,0 +1,104 @@
+.container {
+    display: flex;
+}
+
+.mainContent {
+    flex-grow: 1;
+    padding: 80px;
+    margin-left: 350px;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left;
+    padding-left: 10px;
+
+}
+.headingtable {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align:center;
+    
+}
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputGroup label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.nameInputs {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.inputRow {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.tableHeading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.roleTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.roleTable th,
+.roleTable td {
+    border: 2px solid #007bff;
+    padding: 10px;
+    text-align: center;
+}
+
+.roleTable th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.submitButton {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+}
+
+.submitButton:hover {
+    background: #0056b3;
+}

@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+  }
+  
+  .mainContent {
+    flex-grow: 1;
+    padding: 80px;
+    padding-left: 25%;
+  }
+  
+  .selectionRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .selectionRow label {
+    font-weight: bold;
+  }
+  
+  .selectionRow select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .syllabusTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .syllabusTable th,
+  .syllabusTable td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .syllabusTable th {
+    background-color: #007bff;
+    color: white;
+  }
+  

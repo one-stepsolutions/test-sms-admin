@@ -1,0 +1,100 @@
+/* Container layout */
+.container {
+  display: flex;
+}
+
+/* Main Content */
+.mainContent {
+  flex-grow: 1;
+  padding: 20px;
+  padding-top: 5%;
+  padding-left: 30%;
+}
+
+/* Header row */
+.headerRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Filter row */
+.filterRow {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Tracker Title */
+.trackerTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Tabs Styling */
+.tabs {
+  display: flex;
+  gap: 15px;
+  border-bottom: none;
+  margin-bottom: 15px;
+}
+
+.tabs .nav-link {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  border: none;
+  padding: 8px 20px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.tabs .nav-link.active {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+/* Table Styling */
+.table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.table th {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Styling for Present & Absent cells */
+.present {
+  background-color: #d4edda;
+  color: #155724;
+  font-weight: bold;
+}
+
+.absent {
+  background-color: #f8d7da;
+  color: #721c24;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .filterRow {
+      flex-direction: column;
+  }
+
+  .table th,
+  .table td {
+      font-size: 14px;
+      padding: 5px;
+  }
+}

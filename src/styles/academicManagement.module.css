@@ -1,0 +1,69 @@
+.classroomContainer {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    padding-top: 50px; /* Adjust spacing below Topbar */
+  }
+  
+  /* Page Title Alignment Fix */
+  .pageTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left; /* Ensuring center alignment */
+    margin-top: 20px; /* Adjusted spacing to align below Topbar */
+    padding-left: 5px;
+  }
+  
+  /* Section Title (Standards) */
+  .sectionTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    background: #cfe2ff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+  /* Standards Grid */
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    text-decoration: #333;
+  }
+  
+  /* Standard Box */
+  .standardBox {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border: 2px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .standardBox:hover {
+    background: #007bff;
+    color: white;
+  }
+  
+  /* Responsive Fix */
+  @media (max-width: 768px) {
+    .gridContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  

@@ -1,0 +1,95 @@
+.container {
+    display: flex;
+}
+
+.mainContent {
+    flex-grow: 1;
+    padding: 80px;
+    margin-left: 350px;
+}
+
+.headerSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    margin-bottom: 20px;
+}
+.headerTable {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 520px;
+    padding-right: 520px;
+}
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.addButton {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.addButton:hover {
+    background: #0056b3;
+}
+
+.tabs {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: gray;
+}
+
+.activeTab {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.announcementList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.tableHeading {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.announcementItem {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.announcementItem h3 {
+    margin: 0;
+}
+
+.announcementItem small {
+    color: gray;
+}
+
+.announcementItem a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}

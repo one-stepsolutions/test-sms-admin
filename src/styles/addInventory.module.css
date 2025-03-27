@@ -1,0 +1,60 @@
+.addInventoryContainer {
+    width: 80%;
+    margin: auto;
+    padding-top: 90px;
+    padding-left: 250px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 40px;
+}
+
+.formGroup {
+    display: flex;
+    align-items: center;
+   
+}
+
+.formGroup label {
+    width: 120px;
+    font-weight: bold;
+}
+
+.formGroup input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formRow {
+    display: flex;
+    gap: 15px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cancelButton {
+    background-color:  #0d78bc;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.saveButton {
+    background-color:  #0d78bc;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}

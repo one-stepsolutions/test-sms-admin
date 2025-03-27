@@ -1,0 +1,280 @@
+/* ======= FULL LAYOUT ======= */
+.dashboardContainer {
+    display: flex;
+    flex-direction: column;
+    height: 125vh;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+.logoLink {
+    text-decoration: none; /* ✅ Removes underline */
+    color: inherit; /* ✅ Keeps default text color */
+  }
+/* ======= TOPBAR ======= */
+.topbar {
+    height: 60px;
+    background: #007bff;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Topbar Icons */
+.topbarIcon {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-left: 15px;
+}
+
+.topbarIcon:hover {
+    opacity: 0.8;
+}
+
+/* Profile Icon */
+.profileIcon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+/* ======= SIDEBAR ======= */
+.sidebar {
+    width: 300px;
+    background: #ffffff;
+    padding: 20px;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid #ddd;
+    position: fixed;
+    left: 0;
+    top: 60px;
+}
+
+/* Sidebar Logo */
+.logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+/* Sidebar Title */
+.sidebarTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    margin-left: 10px;
+}
+
+/* Sidebar Menu */
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menuItem {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+/* Sidebar Menu Button */
+.menuLink {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menuLink:hover {
+    background: #f0f0f0;
+}
+
+/* Sidebar Menu Icons */
+.menuIcon {
+    width: 60px;
+    margin-right: 10px;
+}
+
+/* Sidebar Text */
+.menuText {
+    flex: 1;
+}
+
+/* Sidebar Dropdown Arrow */
+.arrowIcon {
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+    margin-left: 10px;
+}
+
+.rotate {
+    transform: rotate(225deg);
+}
+
+/* ======= DASHBOARD MAIN CONTENT ======= */
+.mainContent {
+    flex: 1;
+    padding: 40px;
+    position: relative;
+    margin-left: 320px;
+    margin-top: 60px;
+}
+
+/* Force Dashboard Title Visibility */
+.dashboardTitle {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    color: #333;
+    margin-left: 320px; /* Ensure it is not hidden behind elements */
+    padding-top: 10px;
+    position: relative; /* Ensures it's above other elements */
+    background-color: #f5f5f5; /* Ensure it's not blending into background */
+    width: fit-content; /* Prevent full-width stretching */
+    padding: 80px 15px;
+}
+
+
+
+/* ======= DASHBOARD GRID LAYOUT ======= */
+.moduleGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+    padding: 20px;
+    margin-left: 190px; /* Shift towards right */
+}
+
+/* Individual Module Card */
+.moduleCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Module Icons */
+.moduleIcon {
+    width: 115px;
+    height: 115px;
+    margin-bottom: 10px;
+}
+
+/* Module Buttons */
+.moduleButton {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 200px;
+    transition: background 0.3s ease;
+}
+
+.moduleButton:hover {
+    background: #0056b3;
+}
+
+/* ======= CHAT ICON ======= */
+.chatIconContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.chatIconContainer:hover {
+    transform: scale(1.1);
+}
+
+.chatIcon {
+    width: 50px;
+    height: 50px;
+}
+
+/* ======= RESPONSIVENESS ======= */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 250px;
+    }
+
+    .menuText {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 220px;
+    }
+
+    .menuLink {
+        padding: 8px 12px;
+    }
+
+    .menuText {
+        font-size: 13px;
+    }
+
+    .menuIcon {
+        width: 24px;
+    }
+
+    .arrowIcon {
+        width: 8px;
+        height: 8px;
+        border-width: 1.5px;
+    }
+
+    .moduleGrid {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .moduleGrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

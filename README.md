@@ -1,1 +1,1 @@
-# test-sms-admin
+# sms-application

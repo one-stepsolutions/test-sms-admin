@@ -1,0 +1,64 @@
+.examContainer {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    padding-top: 50px; 
+}
+
+.mainContent {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.pageTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* 🔹 Section Title */
+.sectionTitle {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    background: #cfe2ff;
+    border-radius: 20px;
+    padding: 10px 25px;
+    width: fit-content;
+    margin: 0 auto 15px auto;
+}
+
+.addButton {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.standardBox {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border: 2px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.standardBox:hover {
+    background: #007bff;
+    color: white;
+}

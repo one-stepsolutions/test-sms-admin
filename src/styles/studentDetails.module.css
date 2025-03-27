@@ -1,0 +1,135 @@
+/* Parent Container */
+.sectionContainer {
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+}
+
+/* 🔹 Fix Header Alignment */
+.headerContainer {
+  display: flex;
+  justify-content: center; /* Ensures the button stays centered */
+  align-items: center;
+  position: relative; /* Helps align the profile image */
+  margin-bottom: 15px;
+}
+
+/* 🔹 Fix Section Title (Button Alignment & Size) */
+.sectionTitle {
+  font-size: 20px;
+  font-weight: bold;
+  background: #cfe2ff;
+  padding: 8px 20px; /* 🔹 Ensures button size remains as per design */
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  display: inline-block; /* 🔹 Prevents unwanted stretching */
+  min-width: 180px; /* 🔹 Keeps button size as per design */
+}
+
+/* 🔹 Fix Profile Image Alignment */
+.profileContainer {
+  position: absolute;
+  right: 10px; /* 🔹 Moves profile image to the right */
+  top: 40%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 80px;
+  border: 3px solid #007bff;
+  border-radius: 10px;
+}
+
+.profileImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+}
+
+/* Input Row */
+.inputRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 20px;
+}
+
+/* Labels */
+.inputLabel {
+  font-size: 16px;
+  font-weight: bold;
+  min-width: 180px;
+  color: #333;
+}
+
+/* Input Group */
+.inputGroup {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+/* Input Fields */
+.inputField, .selectField {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+/* Aadhar Card Input */
+.aadharInput {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Form Buttons */
+.formButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.backButton, .nextButton {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.backButton {
+  background-color: #6c757d;
+  color: white;
+}
+
+.nextButton {
+  background-color: #007bff;
+  color: white;
+}
+
+.backButton:hover, .nextButton:hover {
+  opacity: 0.8;
+}
+
+/* 🔹 Responsive Fix */
+@media (max-width: 768px) {
+  .headerContainer {
+    flex-direction: column; /* Stack elements in small screens */
+    align-items: center;
+  }
+
+  .profileContainer {
+    position: relative;
+    transform: none;
+    margin-top: 10px;
+  }
+}

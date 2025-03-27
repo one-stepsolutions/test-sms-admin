@@ -1,0 +1,54 @@
+/* 🔹 Main Content Area - Ensures spacing from Topbar */
+.mainContent {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center; /* Aligns all form components properly */
+    margin-top: 20px;  /* ✅ Pushes content below the Topbar */
+}
+
+/* 🔹 Proper Alignment for "Student Management" */
+.pageTitle {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    display: block;  /* ✅ Makes sure it's on a separate line */
+    text-align: left;
+    margin-left: 305px;  /* ✅ Adjusts left alignment */
+    margin-top: 80px;   /* ✅ Ensures space below the Topbar */
+}
+
+/* 🔹 Center the "Admission Form" Title */
+.formTitle {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;  /* ✅ Keeps it centrally aligned */
+    width: 100%;
+    margin-top: 25px;   /* ✅ Ensures proper spacing from "Student Management" */
+}
+
+/* 🔹 Fix Layout Issue (Ensures Below Topbar) */
+.dashboardContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 🔹 Sidebar & Main Content Layout Fix */
+.dashboardContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* 🔹 Mobile Responsive Fix */
+@media (max-width: 768px) {
+    .pageTitle {
+        text-align: center;
+        margin-left: 0;
+        font-size: 20px;
+    }
+
+    .formTitle {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+}

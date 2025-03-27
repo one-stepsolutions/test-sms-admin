@@ -1,0 +1,101 @@
+.container {
+    display: flex;
+    height: 100vh;
+    padding-top: 80px;
+}
+
+.mainContent {
+    flex-grow: 1;
+    padding: 40px;
+    margin-left: 350px;
+}
+
+.pageTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.formContainer {
+    background: white;
+    padding: 20px;
+    padding-top: 10px;
+
+}
+
+.formTitle {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.inputGroup {
+    margin-bottom: 15px;
+}
+
+.inputGroup label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inputGroup input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.inputRow {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.participantsTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.participantsList {
+    margin-top: 10px;
+}
+
+.participantCard {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.backButton {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+    .mainContent {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .inputRow {
+        flex-direction: column;
+    }
+}

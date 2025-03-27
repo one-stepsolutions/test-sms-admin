@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+  }
+  
+  .mainContent {
+    flex-grow: 1;
+    padding: 80px;
+    padding-left: 25%;
+  }
+  
+  .inputGroup {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+  }
+  
+  select {
+    padding: 8px;
+  }
+  
+  .semesterContainer {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .semesterCard {
+    background: #fff;
+    padding: 15px;
+    border: 2px solid #007bff;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .semesterCard:hover {
+    background: #007bff;
+    color: white;
+  }
+  
